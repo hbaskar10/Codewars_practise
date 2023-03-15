@@ -1,0 +1,13 @@
+// "apple ban" --> ["apple 5", "ban 3"]
+// "you will win" -->["you 3", "will 4", "win 3"]
+// Your task is to write a function that takes a String and returns an Array/list with the length of each word added to each element .
+
+function addLength(str) {
+    //start-here
+      
+      let arr = str.split(' ')
+      return arr.map(i => { 
+        return i+' '+(i.length)
+      })
+    }
+
